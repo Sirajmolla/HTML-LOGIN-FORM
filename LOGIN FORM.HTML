@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	background: #f9f9f9;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.form-container{
+	width: 420px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 7px rgba(0,0,0,.2);
+	border-radius: 10px;
+	background: #fff;
+}
+.form-box{
+	width: 100%;
+	padding: 30px 40px;
+}
+.form-box h2,p{
+	text-align: center;
+}
+.form-box h2{
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.form-box p{
+	margin-top: 5px;
+	font-size: 15px;
+	color: #726e84;
+}
+.custom-hr{
+	height: 5px;
+	width: 40px;
+	border-radius: 2.5px;
+	margin: 0 auto;
+	border: none;
+	background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+}
+.form{
+	margin-top: 20px;
+}
+.form label{
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.input-box{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 33px;
+	padding: 13px 15px;
+}
+::placeholder {
+  color: rgba(0,0,0,.3);
+  opacity: 1;
+}
+.form-clearfix label, a{
+	font-size: 15px;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.form-btn{
+	width: 100%;
+	margin: 20px 0;
+	border: none;
+	border-radius: 10px;
+	padding: 13px 15px;
+	background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+	color: #fff;
+	border-radius: 33px;
+	font-size: 16px;
+}
+.social-box{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.social-box li{
+	list-style: none;
+	margin: 0 10px;
+}
+.social-icon{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 18px;
+	border: 1px solid rgba(0,0,0,.2);
+}
+.social-box li:nth-child(1) .social-icon{
+	color: #1873eb;
+}
+.social-box li:nth-child(2) .social-icon{
+	color: #ea4335;
+}
+.social-box li:nth-child(3) .social-icon{
+	color: #55adee;
+}
+
+/*=== responsive ===*/
+
+@media screen and (max-width: 600px) {
+	.form-container{
+		width: 340px;
+	}
+	.form-box{
+		padding: 20px 20px;
+	}
+}
+</style>
+</head>
+<body>
+
+ <div class="form-container">
+ 	<div class="form-box">
+ 		<h2>Login</h2>
+ 		<hr class="custom-hr">
+ 		<p>Welcome back!</p>
+
+ 		<form class="form">
+ 			<label>Email</label><br>
+ 			<input type="email" name="email" class="input-box" placeholder="Email">
+
+ 			<label>Password</label><br>
+ 			<input type="password" name="password" class="input-box" placeholder="Password">
+
+ 			<div class="form-clearfix">
+ 				<div class="float-left">
+ 					<label><input type="checkbox" value="remember" name="rememberme" /> &nbsp;Remember me</label> 
+ 				</div>
+ 				<div class="float-right">
+ 					<a href="#">Forgot Password?</a>
+ 				</div>
+ 			</div>
+
+ 			<button type="submit" class="form-btn">Login Now</button>
+
+ 			<p>Or login with</p>
+
+ 			<ul class="social-box">
+ 				<li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+ 				<li><a href="#" class="social-icon"><i class="fab fa-google"></i></a></li>
+ 				<li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+ 			</ul>
+
+ 			<p>Don't have an account? <a href="#">Signup</a></p>
+ 		</form>
+ 	</div>
+ </div>
+</body>
+</html>
